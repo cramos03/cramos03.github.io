@@ -1,0 +1,62 @@
+<html>
+  <head>
+  <style>
+    h1 {text-align: center;}
+  </style>
+    <link rel="stylesheet" href="./mp0writeup.css" />
+  </head>
+  <body>
+    <div class="recipe-container">
+      <h1>MP1 Writeup</h1>
+      <h2>Overview</h2>
+      <p>
+        When analyzing the steps I took to complete my page, it mainly began with familiarizing myself with
+        the template that was provided to begin this assignment.<br><br>
+        Since I had little to no HTML & CSS experience, it took me a while to feel comfortable with making any
+        significant changes right out of the gate. Instead, I decided to start practicing these skills by changing
+        the provided template and identifying the effect that came about and how it occurred. This allowed me to better
+        understand each piece that was playing a role in the three sub-pages.<br><br>
+        Following this, I went ahead and began setting up a very basic landing page to my portfolio that would contain
+        my sub-pages and a small intro to who I am. This consisted of adding a photo and some information from my other
+        portfolio I currently have. Similarly, I followed the same process for my "Bio" page when extracting information
+        from my existing portfolio page to provide more context as to who I am.<br><br>
+        After this, I went ahead and finalized my portfolio for this assignment by setting up my cheat sheet sub-page where
+        I would be keeping any tips & tricks used throughout the quarter.
+      </p>
+      <h2>Issue</h2>
+        <p>
+        One issue I ran into during this assignment was attempting to setup left-aligned and right-aligned text on the same line.
+        This would be used for establishing a header for my portfolio to both identify ownership, as well as to allow any visitors
+        to navigate between sub-pages.<br><br>
+        I solved this issue by placing my name and sub-pages within the same header, but then aligning my sub-pages to the right via
+        my CSS using float.
+        </p>
+      <h2>CSS Transition</h2>
+        <p>
+        For my CSS transition, I wanted to start off with something basic, yet still effective when it came to functionality. With this
+        in mind, I settled on implementing a transition between colors when hovering over text within my header. This was important for me
+        since I really enjoy visual cues for when interacting with a specific feature on a web page, such as a hyperlink. <br><br>
+        To accomplish this, I had a few trial and errors with varying CSS formats. However, what worked for me best was implementing a style
+        element when anchored to the text of my headers. This looked something like... <br><br>
+        a {<br>
+            margin: 20px;<br>
+            -webkit-transition: color 1s;<br>
+            transition: color 0s;<br>
+        }<br>
+        a:hover {<br>
+            color: #c7c8a4;<br>
+        }<br>
+        </p>
+      <h2>Ideas and Future</h2>
+        <p>
+        For the future, here are some additional ideas/features I might like to add to my site:
+        <ul style=“list-style-type:disc”>
+            <li>Add header to other sub-pages (allows to navigate without using back arrow)</li>
+            <li>Add work from prior projects and classes that I've completed</li>
+            <li>Add more info to my bio along with accompanying photos</li>
+            <li>Further overall design changes to make my portfolio more professional</li><br><br>
+          </ul>
+        </p>
+    </div>
+  </body>
+</html>
