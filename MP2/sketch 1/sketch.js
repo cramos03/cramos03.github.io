@@ -14,7 +14,7 @@ function draw() {
     fill('#000000')
     square(0, windowHeight/2, 50)
     fill('#009688')
-    rect(windowWidth/1.25, windowHeight/1.5 ,windowWidth/5, windowHeight/2.5)
+    rect(windowWidth/1.25, windowHeight/1.5 ,windowWidth/5,      windowHeight/2.5)
     fill('#E02F00')
     triangle(windowWidth/2, windowHeight/2, windowWidth/4,windowHeight/2,windowWidth/2.75,windowHeight/4)
 } 
