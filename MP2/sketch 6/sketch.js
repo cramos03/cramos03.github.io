@@ -11,7 +11,7 @@ let songPlaying = false
 let song2Playing = false
 
 function preload(){
-  jazzSound = loadSound("jazz.mp3")
+  jazzSound = loadSound("jazz1.mp3")
   jazz2Sound = loadSound("jazz2.mp3")
 }
 
