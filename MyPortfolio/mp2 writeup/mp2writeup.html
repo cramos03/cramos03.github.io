@@ -13,58 +13,58 @@
       <h1>MP2 Writeup</h1>
       <h2>Overview & Usage</h2>
       <p>
-        For my web extension, I settled on making a reminder that wuold alert the user to drink water. This alert would
-        be dependent on how often the user chooses to alerted.<br><br>
+        For this project, we were assigned to work with P5JS when constructing a set of sketches with six different focuses: Static, Random,
+        Infinite Loop, Interactive, Audio, and Audio & Visual. When beginning this project, I took inspiration from Piet Mondrian and art styles
+        with color blocking to see if this could be replicated with a screen saver in mind.<br><br>
         <div style="text-align:center">
-        <img src="m1gif.gif" class="a">
+        <img src="mp2gif.gif" class="a">
         </div>
         <br><br>
-        As seen in my gif, when attempting to use my web extension, it's as simple as submitting a duration, in minutes, for
-        how often you want to be reminded. For the purpose of demonstration, my gif was set to 6 second alerts rather than minute intervals.
-        Whenever you feel like stopping the reminders, these can be cleared and stopped by
-        clicking the "Stop Reminders" button.<br>
+        When beginning this project, I took inspiration from Piet Mondrian and art styles
+        with color blocking to see if this could be replicated with a screen saver in mind. This inspiration can be seen in my gif above.<br>
       </p>
       <h2>Development Process</h2>
         <p>
-        When analyzing the steps I took to complete my page, it mainly began with familiarizing myself with
-        using any java script tools and techniques shared in class, along with communicating between my .js and .html files.<br><br>
-        From here, I wanted to move forward with using some of the web extensions that were shared in class in order to begin looking
-        at each individual piece in an attempt to gain an understanding on how the each extension was being put together. I then moved
-        forward with selecting a web extension that would best suit my purpose in order to use it as a building block for developing my
-        own extension.<br><br>
-        When first beginning to create my web extension, I started off very slow with creating the necessary basics for what my extension
-        would call for. This included things such as a box for user input, placeholders, and buttons to commit to each decision, whether it
-        was setting a reminder or turning them off.<br><br>
-        
-        Following this, I went ahead and began working on setting up my reminder that would pop up in intervals at the desired rate of the user.
-        This called for selecting a few ID's from my .html file in order to work with the assigned constants, along with incorporating an event
-        listener so that my extension would know when to begin.<br><br>
-        After this, I went ahead and finished off my extension by incorporating the setInterval tool that would establish an interval depending
-        on the user's preference for how often they would like to be reminded.
+        When looking at the steps I took to complete this project, it first started with familiarizing myself with using the p5 editor page
+        and the examples proivded to us by Hannah in class. These helped very much with understanding certain aspects of what was being displayed,
+        and either learning how to replicate it or reshape it to match my own needs was an important starting point.<br><br>
+        From here, I wanted to move forward with my inspiration shared above and think of a sequence of sketches that could be connected in style when
+        building from one requirement to another. With this in mind, I began sketching my first static sketch in order to set the foundation for what I may
+        or may not want to use in the following sketches.<br><br>
+        When it came to my random sketch, I settled on randomizing the size for each shape every time the page is reloaded. This was accomplished by adding
+        a min and max to the size for each shape and randomzing the selection every time.<br><br>
+        For my infinite loop sketch, I began working on the scrren saver style aspect to my sketch by having the resized shapes move within the boundary of
+        my screen. This took the most work by needing to figure out how to not only have each shape move at its own unique speed, but also come back once it
+        had hit the edge.<br><br>
+        After that, my interactive sketch was pretty straight forward in adding a color randomizer to my sketches every time the mouse is being clicked. This
+        just rquired a lot of tedious work in setting up a value at the start of my code for each shape and then randomizing it as well.
+        Following this, I went ahead and worked on the audio sketch which was a simple button (in the form of square that matched my other sketches) that would
+        begin playing a jaoanese jazz song I found on the internet. I wanted to use this to keep the theme of a screensaver and having a relaxing song play to be
+        used later in my next sketch as well.<br><br>
+        After this, I went ahead and finished off my final sketch by adding another song to another shape. Included in this was the need to make sure it is also
+        being stopped once clicked again that way the songs don't play on top of one another without any way to stop it. Since I fell sick during the course of this
+        project, I missed two crucial days in adding the rest of the songs to the other shapes, as well as potentially figuring out how this would work if the shapes
+        matched sketch four with ongoing movement.
         </p>
       <h2>Issue Deep-Dive</h2>
         <p>
-        One issue I ran into during this assignment was attempting to setup my setInterval tool. We hadn't covered this tool in class until later
-        on into the project, so I spent some time earlier getting familiar with how to incorporate it into my javascript file to assist with what
-        I was aiming to do. I was mainly stuck on figuring out why my setInterval feature was alerting very rapidly one after the other.<br><br>
-        I solved this issue when seeking help from Hannah who pointed out that this could be due to my setInterval tool being called within my event
-        listener. This meant that upon clicking my "Remind Me" button, it would begin the alerts. To solve this, I instead embedded my setInterval
-        within a function, along with the value entered by the user, and then called my function within the event listener.
+        One issue I ran into during this assignment was sketch three, having my shapes move infinitely without leaving the screen boundaries. I was very lost when it
+        came to beginning this sketch since I wasn't sure how to set a speed at which I'd want each shape to move at.<br><br>
+        I solved this issue when seeking help from The Coding Train who had an excellent video on making an object move and return back once it hit the "walls" of the
+        computer screen. I used this starting point and it applied it to every shape I had in order to make what is seen in my sketch three gif above.
         </p>
       <h2>Ideas and Future Work</h2>
         <p>
-        For the future, here are some additional ideas/features I might like to add to my web extension:
+        For the future, here are some additional ideas/features I might like to add to my sketches:
         <ul style=“list-style-type:disc”>
-            <li>Add text within my popup tab that assures the user that their reminder has been either set or cleared</li>
-            <li>Be able to clear previous reminders simply by just setting a new one</li>
-            <li>Add clarification to my extension that doesn't begin the setInterval function until the user has cleared the alert popup</li>
-            <li>Further overall design changes to make my extension look more professional</li>
+            <li>Add more songs to the rest of my shapes in sketch six</li>
+            <li>Add movement to sketch six while being able to play and stop songs</li>
+            <li>Refine randomized shape sizing that way they don't overlap as poorly, preventing songs from being played on top of one another.</li>
           </ul>
         </p>
         <h2>Kudos</h2>
         <p>
-        A kudos I'd like to give is to Hannah and W3Schools where I was able to find the setInterval method, along with a few helpful examples using
-        it in different ways.<br><br>
+        A kudos I'd like to give is to The Coding Train who helped me with starting my third sketch when adding movement to my objects.<br><br>
         </p>
     </div>
   </body>
