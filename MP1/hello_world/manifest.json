@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "popup.js"
+    },
+    "name": "Lets drink water!",
+    "description": "Setting a reminder to drink more water.",
+    "version": "1.0",
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": "mywater.png"
+    }
+}
