@@ -5,66 +5,67 @@
     div.a {
   text-align: center;
 }
+    img{
+      max-height: auto;
+      max-width: 50%;
+    }
   </style>
-    <link rel="stylesheet" href="./mp1writeup.css" />
+    <link rel="stylesheet" href="./mp3writeup.css" />
   </head>
   <body>
     <div class="recipe-container">
-      <h1>MP1 Writeup</h1>
+      <h1>MP3 Writeup</h1>
       <h2>Overview & Usage</h2>
       <p>
-        For my web extension, I settled on making a reminder that wuold alert the user to drink water. This alert would
-        be dependent on how often the user chooses to alerted.<br><br>
-        <div style="text-align:center">
-        <img src="m1gif.gif" class="a">
+        For my web MP3 project introducing us to a modern web development toolchain, I attempted to make the game <a href="./dev-toolchain/index.html"> Pong
+        </a>.<br><br>
+        <div class="img" style="text-align:center">
+          <img src="pong.png" class="a">
         </div>
         <br><br>
-        As seen in my gif, when attempting to use my web extension, it's as simple as submitting a duration, in minutes, for
-        how often you want to be reminded. For the purpose of demonstration, my gif was set to 6 second alerts rather than minute intervals.
-        Whenever you feel like stopping the reminders, these can be cleared and stopped by
-        clicking the "Stop Reminders" button.<br>
+        As seen in my image above, I wanted to make it a two player game of Pong where I assigned the up and down arrow keys for the right
+        paddle, while the W and S keys were assigned to the left paddle. Furthermore, my intention for this game was to have the ball launch in a random
+        direction at the start to begin the match. I went with this option since I noticed that in the P5 library of Demos provided to us would land in
+        a constant back and forth if neither player moved their paddle. My game is still under production since the ball does not continue moving once the
+        game has begun and the paddles don't allow for repsonses when my keys are pressed.<br>
       </p>
       <h2>Development Process</h2>
         <p>
-        When analyzing the steps I took to complete my page, it mainly began with familiarizing myself with
-        using any java script tools and techniques shared in class, along with communicating between my .js and .html files.<br><br>
-        From here, I wanted to move forward with using some of the web extensions that were shared in class in order to begin looking
-        at each individual piece in an attempt to gain an understanding on how the each extension was being put together. I then moved
-        forward with selecting a web extension that would best suit my purpose in order to use it as a building block for developing my
-        own extension.<br><br>
-        When first beginning to create my web extension, I started off very slow with creating the necessary basics for what my extension
-        would call for. This included things such as a box for user input, placeholders, and buttons to commit to each decision, whether it
-        was setting a reminder or turning them off.<br><br>
+        When analyzing the steps I took to complete my page, it began with setting up the dev-toolchain via the activity that Hannah provided to us
+        during class. From here, I wanted to familiarize myself with further P5 concepts and tools, so I ran through the endless runner example Hannah
+        had shared as well. Along with this, I was able to use the P5 Pong demo as a launching point and combine the sprite tools from the endless runner
+        to create each of my elements (ball, left paddle, right paddle).<br><br>
+        Since I was on a time crunch, this overall game setup was easy to throw together and I simply adjusted the paddle placements and size to make the
+        a bit more challenging. From here, I wanted to focus on adding a score tracker as the game progressed. This was done by identifying an area of out of
+        bounds (aka beyond the paddles) that would then reset my ball to its originial position and add a point to the winning players score. For this, I 
+        just needed to declare my score trackers at the start of my code to use later.<br><br>
         
-        Following this, I went ahead and began working on setting up my reminder that would pop up in intervals at the desired rate of the user.
-        This called for selecting a few ID's from my .html file in order to work with the assigned constants, along with incorporating an event
-        listener so that my extension would know when to begin.<br><br>
-        After this, I went ahead and finished off my extension by incorporating the setInterval tool that would establish an interval depending
-        on the user's preference for how often they would like to be reminded.
+        Finally, the last change I wanted to make from building off the original Pong demo was the ability to choose when to start. I didn't want the ball to launch
+        right away, but instead when both players were ready and they had clicked to start the game. In theory, this would be done by announcing a variable to keep track
+        if the game had started. This would declare True if the game had clicked, and return a result of False once either player had scored and the ball was returned to its
+        original starting point.<br><br>
         </p>
       <h2>Issue Deep-Dive</h2>
         <p>
-        One issue I ran into during this assignment was attempting to setup my setInterval tool. We hadn't covered this tool in class until later
-        on into the project, so I spent some time earlier getting familiar with how to incorporate it into my javascript file to assist with what
-        I was aiming to do. I was mainly stuck on figuring out why my setInterval feature was alerting very rapidly one after the other.<br><br>
-        I solved this issue when seeking help from Hannah who pointed out that this could be due to my setInterval tool being called within my event
-        listener. This meant that upon clicking my "Remind Me" button, it would begin the alerts. To solve this, I instead embedded my setInterval
-        within a function, along with the value entered by the user, and then called my function within the event listener.
+        Since my game is still under production, there were two main issues I had trouble solving. One issue I ran into during this assignment was having the ball begin once the game had been clicked. Initially, I thought the game wasn't returning a True 
+        statement once the mouse was clicked, but figured that this was indeed not the issue afer changing the ball velocity variable to a latrger value and seeing it move once
+        when the mouse was clicked, and never again. <br><br>
+        Another issue I couldn't seem to solve was the paddle movement. After spending a few hours looking at the keyIsDown tool on the P5 library, I was stumped on why
+        my paddles produce no movement for either player when any of the assigned keys are pressed.
         </p>
       <h2>Ideas and Future Work</h2>
         <p>
-        For the future, here are some additional ideas/features I might like to add to my web extension:
+        For the future, here are some additional ideas/adjustments I might like to add to my game:
         <ul style=“list-style-type:disc”>
-            <li>Add text within my popup tab that assures the user that their reminder has been either set or cleared</li>
-            <li>Be able to clear previous reminders simply by just setting a new one</li>
-            <li>Add clarification to my extension that doesn't begin the setInterval function until the user has cleared the alert popup</li>
-            <li>Further overall design changes to make my extension look more professional</li>
+            <li>Fix ball movement issue</li>
+            <li>Fix paddle movement issue</li>
+            <li>Add a score cap so that the game will end and announce the winner once this threshold is met</li>
+            <li>Add powerups to either player (i.e., slow the other player's paddle down, increase ball speed for one player's hit, etc.)</li>
           </ul>
         </p>
         <h2>Kudos</h2>
         <p>
-        A kudos I'd like to give is to Hannah and W3Schools where I was able to find the setInterval method, along with a few helpful examples using
-        it in different ways.<br><br>
+        A kudos I'd like to give is to the Platformer runner game for an easy introduction to setting up different variables and tools within a game. Along with this is the P5.play demos (specifically the Pong game) as well as their reference for clarification on varying sprite movements<br><br>
         </p>
     </div>
   </body>
