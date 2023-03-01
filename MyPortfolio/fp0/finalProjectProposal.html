@@ -1,0 +1,83 @@
+<html>
+  <head>
+  <style>
+    h1 {text-align: center;}
+    div.a {
+  text-align: center;
+}
+    img{
+      max-height: auto;
+      max-width: 50%;
+    }
+  </style>
+    <link rel="stylesheet" href="./finalProposal.css" />
+  </head>
+  <body>
+    <div class="recipe-container">
+        <h1>Final Project Proposal</h1>
+        <h2>Intro</h2>
+        <p>
+          For my final project I plan on using P5 to create a paint-like drawing app, which lets the user download their art once they've completed their work.
+          I've sketched out two drawings to mock-up a potential interface that I intend on embedding into the design for my application. These can be seen below:
+          <br><br>
+          <div class="img" style="text-align:center">
+            <img src="prototype.png" class="a">
+            <img src="finalproject.png" class="a">
+          </div>
+          <br><br>
+          As seen in my image above, I wanted to make it a two player game of Pong where I assigned the up and down arrow keys for the right
+          paddle, while the W and S keys were assigned to the left paddle. Furthermore, my intention for this game was to have the ball launch in a random
+          direction at the start to begin the match. I went with this option since I noticed that in the P5 library of Demos provided to us would land in
+          a constant back and forth if neither player moved their paddle. My game is still under production since the ball does not continue moving once the
+          game has begun and the paddles don't allow for repsonses when my keys are pressed.<br>
+        </p>
+        <h2>Prototype Version</h2>
+          <p>
+          When considering a minimal version that demonstrates the core features of my app, I'd like to implement a brush (aka the mouse) with an attached color and brush stroke/size.<br><br>
+          For my overall layout, I'll first aim to be able to draw and erase work on a canvas space. I'll attach a pencil and eraser icon to the side to distinguish the tool that is being used from one another. 
+          If I have a bit more time I'll shoot towards implementing some sort of color selector in the form of a color wheel for an easy visualization as well.
+          </p>
+        <h2>Final Version</h2>
+          <p>
+          What I envision for my final version builds off of my prototype. I'll maintain the color wheel as a color selector, but will also implement a storke/brush size selector
+          in the form of a slider. This will help with adding detailed art to user's project rather than using the same brush size for the entire thing. If I have even more time, I'll experiement with adding
+          different brush styles. This can be in the form of fade or blur tools, or even the brush shape itself.
+          </p>
+        <h2>Step-by-Step Plan</h2>
+          <p>
+          Below is the step-by-step plan for my development process when creating my project:
+          <ol style=“list-style-type:disc”>
+              <li>Review class activity for creating continuous circles that will act as my brush</li>
+              <li>Assign circle icon for changing brush color when clicked (do the same for eraser with matching background color)</li>
+              <li>Use download example shared with Hannah to download art (saveCanvas tool)</li>
+          <b>Completed Milestone 1: Prototype Version</b>
+              <li>Create tool bar on the side of my canvas</li>
+              <li>Create color wheel through P5 example and save color code to be used for brush color</li>
+              <li>Set up slider for circle size (aka brush size)</li>
+              <li>Update icon for eraser tool</li>
+              <li>Add labels to each tool</li>
+          <b>Completed Milestone 2: Final Version</b>
+            </ol>
+          </p>
+        <h2>Known Unknowns</h2>
+          <p>
+          Below is a list of things I don't currently know how to do, but know that I will have to figure out to complete this project:
+          <ul style=“list-style-type:disc”>
+              <li>Create a color wheel</li>
+              <li>Develop varying brush styles (faded, blur, etc.)</li>
+              <li>Add a slider for varying brush size, and keep this slider for different brush shapes</li>
+              <li>Allow a user to download their art that only captures their canvas</li>
+            </ul>
+          </p>
+        <h2>Stretch Goals</h2>
+          <p>
+          <ul style=“list-style-type:disc”>
+              <li>Preloaded background images to choose from</li>
+              <li>Upload an image to begin drawing on</li>
+              <li>Add a score cap so that the game will end and announce the winner once this threshold is met</li>
+            </ul>
+          <br>
+          </p>
+      </div>
+    </body>
+  </html>
